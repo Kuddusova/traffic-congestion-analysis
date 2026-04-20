@@ -73,8 +73,7 @@ windows = [
 (dtime(7, 0), dtime(10, 0)),
 (dtime(16, 0), dtime(19, 0))
 ]
-columns = ["timestamp", "route_id", "start", "end", "distance_km",
-"duration_min", "duration_in_traffic_min"]
+columns = ["timestamp", "route_id", "start", "end", "distance_km", "duration_min", "duration_in_traffic_min"]
 df = pd.DataFrame(columns=columns)
 def in_window(ts):
 for start, end in windows:
