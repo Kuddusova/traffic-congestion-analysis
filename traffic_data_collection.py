@@ -93,8 +93,6 @@ today_start = datetime.combine(now.date(), start, tz)
 today_end = datetime.combine(now.date(), end, tz)
 if today_start <= candidate <= today_end:
 return candidate
-Analyzing Traffic Congestion in Tashkent using speeds from GPS data
-44
 if candidate < today_start:
 return today_start
 now += timedelta(days=1)
